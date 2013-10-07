@@ -15,26 +15,26 @@
   <body>
   	<div class="container">
   	<div class="row">
-  		<div class="col-lg-12">
+  		<div class="col-sm-12">
   			<img src="img/layout_set_logo.png" alt="zubiri" />
   		</div><!--end imagen zubiri -->
   	</div>
   	<div class="row">
-  		<form class="form-horizontal col-lg-8" role="form">
+  		<form class="form-horizontal col-sm-8" role="form">
 		  <div class="form-group">
-		    <label for="inputEmail1" class="col-lg-6 control-label">usuario:</label>
-		    <div class="col-lg-6">
+		    <label for="inputEmail1" class="col-sm-6 control-label">usuario:</label>
+		    <div class="col-sm-6">
 		      <input type="email" class="form-control" id="txtUsuario" placeholder="tu correo">
 		    </div>
 		  </div>
 		  <div class="form-group">
-		    <label for="inputPassword1" class="col-lg-6 control-label">Password</label>
-		    <div class="col-lg-6">
+		    <label for="inputPassword1" class="col-sm-6 control-label">Password</label>
+		    <div class="col-sm-6">
 		      <input type="password" class="form-control" id="txtPassword" placeholder="Password">
 		    </div>
 		  </div>
 		  <div class="form-group">
-		    <div class="col-lg-offset-6 col-lg-6">
+		    <div class="col-sm-offset-6 col-sm-6">
 		      <div class="checkbox">
 		        <label>
 		          <input type="checkbox" id="chkRecordar"> Recordar
@@ -43,12 +43,12 @@
 		    </div>
 		  </div>
 		  <div class="form-group">
-		    <div class="col-lg-offset-6 col-lg-6">
+		    <div class="col-sm-offset-6 col-sm-6">
 		      <button type="button" class="btn btn-primary btn-lg btn-block">Aceptar</button>
 		    </div>
 		  </div>
 		</form><!--end formulario-->
-	<div class="col-lg-4">
+	<div class="col-sm-4">
 		<img src="img/logoZubiri.png" alt="zubiri" />
 	</div><!-- end logo-->
 </div><!--row del formulario+logo-->
