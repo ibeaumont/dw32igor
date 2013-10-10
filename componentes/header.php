@@ -3,9 +3,9 @@
 	<!--imagen de los cubos-->
 		<img src="img/layout_set_logo.png" alt="zubiri" class="img-responsive"/>
 	</div>
-	<div class="col col-sm-2 hidden-md hidden-xs">
+	<div class="col col-sm-2">
 	<!--imagen del logo-->
-		<img src="img/logoZubiri.png" alt="zubiri" class="img-responsive"/>
+		<img src="img/logoZubiri.png" alt="zubiri" class="img-responsive hidden-md hidden-xs"/>
 	</div>
 </div>
 <div class="row">
