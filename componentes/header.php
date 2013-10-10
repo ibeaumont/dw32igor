@@ -37,8 +37,7 @@
                 <li><a href="#">Otros</a></li>
               </ul>
             </li>
-		    <li><a href="formacion.php"><span class="glyphicon glyphicon-book"></span> Formacion</a></li>
-            <li><a href="proyectos.php"><span class="glyphicon glyphicon-plane"></span> Proyectos</a></li>
+		    <li><a href="proyectos.php"><span class="glyphicon glyphicon-plane"></span> Proyectos</a></li>
             <li><a href="proyectos.php"><span class="glyphicon glyphicon-picture"></span> Mapa</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
