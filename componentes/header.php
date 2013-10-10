@@ -1,11 +1,11 @@
 <div class="row">
-	<div class="col col-xs-12 col-sm-10">
+	<div class="col col-xs-10">
 	<!--imagen de los cubos-->
 		<img src="img/layout_set_logo.png" alt="zubiri" class="img-responsive"/>
 	</div>
-	<div class="col col-sm-2">
+	<div class="col col-xs-2">
 	<!--imagen del logo-->
-		<img src="img/logoZubiri.png" alt="zubiri" class="img-responsive hidden-md hidden-xs"/>
+		<img src="img/logoZubiri.png" alt="zubiri" class="img-responsive"/>
 	</div>
 </div>
 <div class="row">
