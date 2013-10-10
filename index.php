@@ -6,7 +6,7 @@
 		<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
    
   </head>
-  <body id="home">
+  <body id="inicio">
 		<section class="container">
 			<div class="content row">
           <?php include "componentes/header.php"; ?>

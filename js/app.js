@@ -1,3 +1,20 @@
+$(function() {
+
+  //seleccionar automaticamente los items del menu cuando navegamos
+  $("#indice a:contains('Indice')").parent().addClass('active');
+  $("#formacion a:contains('Formacion')").parent().addClass('active');
+  $("#proyectos a:contains('Proyectos')").parent().addClass('active');
+  $("#mapa a:contains('Mapa')").parent().addClass('active');
+
+
+  //dropdown menu automaticos cuando hover
+  $('ul.nav li.dropdown').hover(function() {
+    $('.dropdown-menu', this).fadeIn();
+  }, function() {
+    $('.dropdown-menu', this).fadeOut('fast');
+  });//hover
+}
+
 
 /*****EJECUTAR AL CARGAR LA PAG **********/
 $( document ).ready(function() {
