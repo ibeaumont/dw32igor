@@ -26,10 +26,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex8-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Inicio</a></li>
-            <li><a href="formacion.php">Formacion</a></li>
-            <li><a href="proyectos.php">Proyectos</a></li>
-            <li><a href="proyectos.php">Mapa</a></li>
+            <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+            <li><a href="formacion.php"><span class="glyphicon glyphicon-book"></span> Formacion</a></li>
+            <li><a href="proyectos.php"><span class="glyphicon glyphicon-plane"></span> Proyectos</a></li>
+            <li><a href="proyectos.php"><span class="glyphicon glyphicon-picture"></span> Mapa</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </nav>
