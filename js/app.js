@@ -1,7 +1,7 @@
 $(function() {
 
   //seleccionar automaticamente los items del menu cuando navegamos
-  $("#indice a:contains('Indice')").parent().addClass('active');
+  $("#inicio a:contains('Inicio')").parent().addClass('active');
   $("#formacion a:contains('Formacion')").parent().addClass('active');
   $("#proyectos a:contains('Proyectos')").parent().addClass('active');
   $("#mapa a:contains('Mapa')").parent().addClass('active');
