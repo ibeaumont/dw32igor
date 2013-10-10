@@ -7,6 +7,8 @@
 	<!--imagen del logo-->
 		<img src="img/logoZubiri.png" alt="zubiri" class="img-responsive"/>
 	</div>
+</div>
+<div class="row">
 	<!-- inicio NAVBAR -->
 	<div class="bs-example">
       <nav class="navbar navbar-inverse" role="navigation">
