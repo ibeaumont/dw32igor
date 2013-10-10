@@ -27,9 +27,9 @@
         <div class="collapse navbar-collapse navbar-ex8-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-        	<div class="btn-group">
-		        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-book"></span> Formacion</a></button>
-		        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        	<li class="btn-group">
+		        <button type="button" class="btn"><span class="glyphicon glyphicon-book"></span> Formacion</a></button>
+		        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
 		        <ul class="dropdown-menu" role="menu">
 		          <li><a href="#">Informatica</a></li>
 		          <li><a href="#">Turismo</a></li>
@@ -37,7 +37,7 @@
 		          <li class="divider"></li>
 		          <li><a href="#">Otros</a></li>
 		        </ul>
-	      	</div>
+	      	</li>
 		    <li><a href="formacion.php"><span class="glyphicon glyphicon-book"></span> Formacion</a></li>
             <li><a href="proyectos.php"><span class="glyphicon glyphicon-plane"></span> Proyectos</a></li>
             <li><a href="proyectos.php"><span class="glyphicon glyphicon-picture"></span> Mapa</a></li>
