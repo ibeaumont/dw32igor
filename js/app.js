@@ -13,7 +13,7 @@ $(function() {
   }, function() {
     $('.dropdown-menu', this).fadeOut('fast');
   });//hover
-}
+});
 
 
 /*****EJECUTAR AL CARGAR LA PAG **********/
