@@ -5,7 +5,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a class="accordion-toggle btn btn-primary btn-block" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
           Gurasoekin Bilerak eta Tutoritzak
         </a>
       </h4>
