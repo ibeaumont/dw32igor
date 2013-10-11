@@ -1,3 +1,6 @@
+//prueba para cargar fichero css en todas las paginas
+ $('head').append('<link rel="stylesheet" href="css/mis.css" type="text/css" />');
+
 $(function() {
 
   //seleccionar automaticamente los items del menu cuando navegamos
