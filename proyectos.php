@@ -19,7 +19,7 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <div class="col-sm-6 col-md-3">
+          <div>
             <div class="thumbnail">
                 <img data-src="img/besTrain.png" alt="BesTrain">
                 <div class="caption">
