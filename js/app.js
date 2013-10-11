@@ -27,6 +27,11 @@ $( document ).ready(function() {
   });
 });
 
+//arrancar carrousel
+$('.carousel').carousel({
+  interval: 2000
+})
+
 //añadir el evento onclick a btnAceptar
 var btnAceptar=document.getElementById("btnAceptar");
 btnAceptar.addEventListener("click",comprobar,false);
