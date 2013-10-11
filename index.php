@@ -17,7 +17,9 @@
           <?php include "componentes/noticias.php"; ?>
 				</section><!-- sidebar -->
 			</div><!-- content -->
-    <?php include "componentes/footer.php"; ?>
+    <div class="row" id="footer">
+      <?php include "componentes/footer.php"; ?>
+    </div>
 		</section><!-- container -->
 
     <script src="assets/js/jquery.js"></script>
