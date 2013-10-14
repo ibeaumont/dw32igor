@@ -21,6 +21,7 @@
           </p>
         </div>
       </div>
+      <div class="row">
           <div class="col-sm-6 col-lg-3">
             <div class="thumbnail">
                 <img src="img/besTrain.png" alt="BesTrain">
@@ -88,7 +89,8 @@
                 </div>
             </div><!-- fin thunb-->
 
-  	</div><!-- content -->
+  	 </div><!-- col-lg3 -->
+    </div><!--row thumbnails-->
     <?php include "componentes/footer.php"; ?>
 		</section><!-- container -->
 
