@@ -8,7 +8,7 @@
   </head>
   <body id="proyectos">
 		<section class="container">
-			<div class="content row">
+			<div class="row">
          <?php include "componentes/header.php"; ?>
   			 <div class="row jumbotron">
           <h3>Proyectos</h3>
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="row">
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-lg-3">
             <div class="thumbnail">
                 <img src="img/besTrain.png" alt="BesTrain">
                 <div class="caption">
@@ -36,6 +36,8 @@
                   <p><a href="#" class="btn btn-primary">Mas info...</a></p>
                 </div>
             </div><!-- fin thunb-->
+          </div>
+          <div class="col-lg-3">
             <div class="thumbnail">
                 <img src="img/eleBasque.jpg" alt="BesTrain">
                 <div class="caption">
@@ -49,6 +51,9 @@
                   <p><a href="#" class="btn btn-primary">Mas info...</a></p>
                 </div>
             </div><!-- fin thunb-->
+          </div>
+          <div class="col-lg-3">
+
             <div class="thumbnail">
                 <img src="img/menoresOsi.jpg" alt="Menores OSI">
                 <div class="caption">
@@ -62,6 +67,9 @@
                   <p><a href="#" class="btn btn-primary">Mas info...</a></p>
                 </div>
             </div><!-- fin thunb-->
+          </div>
+          <div class="col-lg-3">
+
             <div class="thumbnail">
                 <img src="img/sareSozialak.jpg" alt="Sare sozialak">
                 <div class="caption">
@@ -75,6 +83,9 @@
                   <p><a href="#" class="btn btn-primary">Mas info...</a></p>
                 </div>
             </div><!-- fin thunb-->
+          </div>
+          <div class="col-lg-3">
+
             <div class="thumbnail">
                 <img src="img/amadeus.jpg" alt="Amadeus">
                 <div class="caption">
@@ -88,6 +99,8 @@
                   <p><a href="#" class="btn btn-primary">Mas info...</a></p>
                 </div>
             </div><!-- fin thunb-->
+          </div>
+
 
   	 </div><!-- col-lg3 -->
     </div><!--row thumbnails-->
