@@ -68,6 +68,8 @@
                 </div>
             </div><!-- fin thunb-->
           </div>
+        </div><!-- fin row-->
+        <div class="row">
           <div class="col-sm-6 col-md-4">
 
             <div class="thumbnail">
