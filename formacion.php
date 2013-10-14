@@ -9,15 +9,19 @@
   <body id="formacion">
 		<section class="container">
 			<div class="content row">
-          <?php include "componentes/header.php"; ?>
+        <?php include "componentes/header.php"; ?>
+      </div>
+      <div class="content row">
         <section class="sidebar col col-lg-4">
           <?php include "componentes/menuFormacion.php"; ?>
         </section><!-- sidebar -->
-      </div><!-- content -->
+      
 				<section class="main col col-lg-8">
           <?php include "componentes/mainFormacion.php"; ?>
+
 				</section><!-- main -->
-				
+      </div>
+		  
     <?php include "componentes/footer.php"; ?>
 		</section><!-- container -->
 
