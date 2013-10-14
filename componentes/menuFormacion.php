@@ -1,6 +1,6 @@
 <!--menu para la navegacion en formacion -->
 <div class="tabbable tabs-left">
-  <ul class="nav nav-tabs">
+  <ul class="nav nav-tabs-left">
     <li class="active"><a href="#infor" data-toggle="tab">Informatica</a></li>
     <li><a href="#turismo" data-toggle="tab">Turismo</a></li>
     <li><a href="#administrativo" data-toggle="tab">Administrativo</a></li>
