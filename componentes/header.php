@@ -30,11 +30,11 @@
         	<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"> Formacion <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Informatica</a></li>
-                <li><a href="#">Turismo</a></li>
-                <li><a href="#">Administrador</a></li>
-                <li><a href="#">Comercio</a></li>
-                <li><a href="#">Otros</a></li>
+                <li><a href="formacion.php#informatica">Informatica</a></li>
+                <li><a href="formacion.php#turismo">Turismo</a></li>
+                <li><a href="formacion.php#administracion">Administrador</a></li>
+                <li><a href="formacion.php#comercio">Comercio</a></li>
+                <li><a href="formacion.php#otros">Otros</a></li>
               </ul>
             </li>
 		    <li><a href="proyectos.php"><span class="glyphicon glyphicon-plane"></span> Proyectos</a></li>
