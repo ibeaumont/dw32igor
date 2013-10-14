@@ -1,6 +1,6 @@
 <div class="tab-content">
     <div class="tab-pane active" id="infor">
-      <h4>Informatica</h4>
+      <h3>Informatica</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -10,7 +10,7 @@
   	 </p>
     </div>
     <div class="tab-pane" id="turismo">
-      <h4>Turismo</h4>
+      <h3>Turismo</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -20,7 +20,7 @@
   	 </p>
     </div>
     <div class="tab-pane" id="administrativo">
-      <h4>Administrativo</h4>
+      <h3>Administrativo</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -30,7 +30,7 @@
   	 </p>
     </div>
     <div class="tab-pane" id="comercio">
-      <h4>Comercio</h4>
+      <h3>Comercio</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -40,7 +40,7 @@
   	 </p>
     </div>
     <div class="tab-pane" id="otros">
-      <h4>Otros</h4>
+      <h3>Otros</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
