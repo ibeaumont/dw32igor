@@ -19,7 +19,7 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-lg-3">
             <div class="thumbnail">
                 <img src="img/besTrain.png" alt="BesTrain">
                 <div class="caption">
@@ -73,7 +73,7 @@
                 </div>
             </div><!-- fin thunb-->
             <div class="thumbnail">
-                <img src="img/amadeus.png" alt="Amadeus">
+                <img src="img/amadeus.jpg" alt="Amadeus">
                 <div class="caption">
                   <h3>Amadeus</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
