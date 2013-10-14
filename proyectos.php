@@ -20,6 +20,7 @@
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
+      </div>
           <div class="col-sm-6 col-lg-3">
             <div class="thumbnail">
                 <img src="img/besTrain.png" alt="BesTrain">
@@ -87,10 +88,7 @@
                 </div>
             </div><!-- fin thunb-->
 
-            </div>
-          </div><!--fin proyectos -->
-				
-			</div><!-- content -->
+  	</div><!-- content -->
     <?php include "componentes/footer.php"; ?>
 		</section><!-- container -->
 
