@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="row">
-          <div class="col-sm-6 col-md-4">
+          <div class="col-md-4">
             <div class="thumbnail">
                 <img src="img/besTrain.png" alt="BesTrain">
                 <div class="caption">
@@ -37,7 +37,7 @@
                 </div>
             </div><!-- fin thunb-->
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-md-4">
             <div class="thumbnail">
                 <img src="img/eleBasque.jpg" alt="BesTrain">
                 <div class="caption">
@@ -52,7 +52,7 @@
                 </div>
             </div><!-- fin thunb-->
           </div>
-          <div class="col-sm-6 col-md-4" >
+          <div class="col-md-4" >
 
             <div class="thumbnail">
                 <img src="img/menoresOsi.jpg" alt="Menores OSI">
@@ -70,7 +70,7 @@
           </div>
         </div><!-- fin row-->
         <div class="row">
-          <div class="col-sm-6 col-md-4">
+          <div class="col-md-4">
 
             <div class="thumbnail">
                 <img src="img/sareSozialak.jpg" alt="Sare sozialak">
@@ -86,7 +86,7 @@
                 </div>
             </div><!-- fin thunb-->
           </div>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-md-4">
             <div class="thumbnail">
                 <img src="img/amadeus.jpg" alt="Amadeus">
                 <div class="caption">
