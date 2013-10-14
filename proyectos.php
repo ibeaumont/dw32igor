@@ -10,7 +10,7 @@
 		<section class="container">
 			<div class="content row">
          <?php include "componentes/header.php"; ?>
-  			 <div class="row">
+  			 <div class="row jumbotron">
           <h3>Proyectos</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
