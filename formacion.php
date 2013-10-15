@@ -29,6 +29,10 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script>
+    $('#mainForm').scrollspy({
+      target: '#navFormacion',
+      offset: 400
+    })
     $('#navFormacion a').click(function (e) {
   //e.preventDefault()
   $(this).tab('show')

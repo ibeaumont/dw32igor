@@ -1,4 +1,4 @@
-<div data-spy="scroll" data-target="#navFormacion" class="scrollspy">
+<div data-spy="scroll" data-target="#navFormacion" class="scrollspy" id="mainForm">
     <div id="infor">
       <h3>Informatica</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
