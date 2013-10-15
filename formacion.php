@@ -8,7 +8,7 @@
   </head>
   <body id="formacion" data-spy="scroll" data-target="#navFormacion>
 		<section class="container">
-			<div class="content row">
+			<div class="content row affix" >
         <?php include "componentes/header.php"; ?>
       </div>
       <div class="content row">
@@ -21,18 +21,15 @@
 
 				</section><!-- main -->
       </div>
-		  
-    <?php include "componentes/footer.php"; ?>
+		<div class="affix">
+      <?php include "componentes/footer.php"; ?>
+    </div>
 		</section><!-- container -->
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
-    <script>
-    $('#mainForm').scrollspy({
-      target: '#navFormacion',
-      offset: 400
-    })
+    
     $('#navFormacion a').click(function (e) {
   //e.preventDefault()
   $(this).tab('show')
