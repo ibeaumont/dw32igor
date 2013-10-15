@@ -30,7 +30,7 @@
     <script src="js/app.js"></script>
     <script>
     $('#navFormacion a').click(function (e) {
-  e.preventDefault()
+  //e.preventDefault()
   $(this).tab('show')
 })
     </script>
