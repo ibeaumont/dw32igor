@@ -8,7 +8,7 @@
   </head>
   <body id="formacion" data-spy="scroll" data-target="#navFormacion>
 		<section class="container">
-			<div class="content row affix" >
+			<div class="content row" >
         <?php include "componentes/header.php"; ?>
       </div>
       <div class="content row">
@@ -21,7 +21,7 @@
 
 				</section><!-- main -->
       </div>
-		<div class="affix">
+		<div>
       <?php include "componentes/footer.php"; ?>
     </div>
 		</section><!-- container -->
