@@ -28,5 +28,11 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
+    <script>
+    $('#navFormacion a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+    </script>
   </body>
 </html>
