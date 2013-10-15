@@ -1,8 +1,9 @@
 #footer{
 	margin-top: 40px;
 }
-.scrollspy-example {
+
+.scrollspy{
 position: relative;
-height: 200px;
+height: 400px;
 margin-top: 10px;
 overflow: auto;
