@@ -32,7 +32,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="formacion.php#informatica">Informatica</a></li>
                 <li><a href="formacion.php#turismo">Turismo</a></li>
-                <li><a href="formacion.php#administracion">Administrador</a></li>
+                <li><a href="formacion.php#administrativo">Administrativo</a></li>
                 <li><a href="formacion.php#comercio">Comercio</a></li>
                 <li><a href="formacion.php#otros">Otros</a></li>
               </ul>
