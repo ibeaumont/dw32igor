@@ -6,7 +6,7 @@
 		<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
    
   </head>
-  <body id="formacion">
+  <body id="formacion" data-spy="scroll" data-target="#navFormacion>
 		<section class="container">
 			<div class="content row">
         <?php include "componentes/header.php"; ?>
