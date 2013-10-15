@@ -1,5 +1,5 @@
 <!--menu para la navegacion en formacion -->
-  <ul class="nav nav-pills nav-stacked" id="navFormacion navbar-static-top">
+  <ul class="nav nav-pills nav-stacked navbar-fixed" id="navFormacion">
     <li class="active"><a href="#informatica">Informatica</a></li>
     <li><a href="#turismo" >Turismo</a></li>
     <li><a href="#administrativo">Administrativo</a></li>
