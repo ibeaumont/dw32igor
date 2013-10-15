@@ -29,7 +29,11 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
-    
+   <script>
+   $('#navFormacion').scrollspy({
+      target: '.bs-sidebar',
+      offset: 400
+    }) 
     $('#navFormacion a').click(function (e) {
   //e.preventDefault()
   $(this).tab('show')
