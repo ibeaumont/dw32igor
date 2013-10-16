@@ -6,7 +6,7 @@
 		<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
    
   </head>
-  <body id="formacion" data-spy="scroll" data-target="#navFormacion>
+  <body id="formacion">
 		<section class="container">
 			<div class="content row" >
         <?php include "componentes/header.php"; ?>
@@ -34,9 +34,9 @@
       target: '#navFormacion',
       offset: 400
     }); 
-    $('#navFormacion a').click(function (e) {
+    //$('#navFormacion a').click(function (e) {
   //e.preventDefault()
-  $(this).tab('show')
+  //$(this).tab('show')
 });
     </script>
   </body>
