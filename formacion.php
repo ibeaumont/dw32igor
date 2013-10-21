@@ -12,11 +12,11 @@
         <?php include "componentes/header.php"; ?>
       </div>
       <div class="content row">
-        <section class="sidebar col col-lg-4">
+        <section class="sidebar col col-sm-4">
           <?php include "componentes/menuFormacion.php"; ?>
         </section><!-- sidebar -->
       
-				<section class="main col col-lg-8">
+				<section class="main col col-sm-8">
           <?php include "componentes/mainFormacion.php"; ?>
 
 				</section><!-- main -->
@@ -34,9 +34,7 @@
       target: '#navFormacion',
       offset: 400
     }); 
-    //$('#navFormacion a').click(function (e) {
-  //e.preventDefault()
-  //$(this).tab('show')
+    
 });
     </script>
   </body>
