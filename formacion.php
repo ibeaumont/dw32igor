@@ -42,6 +42,13 @@
         return $(this).hasClass('active')
       }).children().text()
 
+      //eliminar el activo anterior
+      $('.dropdown-menu').children().filter(
+        function(){
+          return ($(this).hasClass('active'))
+        }
+      ).removeClass('active')
+
       //seleccionar del menu principal el elem. seleccionado en navFormacion
       $('.dropdown-menu').children().filter(
         function(){
