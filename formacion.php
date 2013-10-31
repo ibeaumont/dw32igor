@@ -34,6 +34,22 @@
       target: '#navFormacion',
       offset: 400
     }); 
+   //codigo para detectar los movimientos del scrollspy
+   $('#navFormacion').on('activate.bs.scrollspy', function () {
+      //obtner el texto del elem. seleccionado en navFormacion
+      var txtSel=$('#navFormacion li').filter(
+        function(){
+        return $(this).hasClass('active')
+      }).children().text()
+
+      //seleccionar del menu principal el elem. seleccionado en navFormacion
+      $('.dropdown-menu').children().filter(
+        function(){
+          return ($(this).children().text()===txtSel)
+        }
+      ).addClass('active')
+
+   })
     
 });
     </script>
