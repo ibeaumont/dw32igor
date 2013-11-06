@@ -36,7 +36,7 @@
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     var datos;
     var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
-    
+    jQuery.support.cors = true;
    var ajaxConn=$.ajax({
         url : 'http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml',
         type : 'GET',
