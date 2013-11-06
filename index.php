@@ -36,11 +36,11 @@
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     var datos;
     var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
-    $.getJSON(url,function(data){datos=data});
-   /*var ajaxConn=$.ajax({
+    
+   var ajaxConn=$.ajax({
         url : 'http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml',
         type : 'GET',
-        dataType : 'jsonp'
+        dataType : 'xml'
     })
 
     ajaxConn.done(function(data) {
