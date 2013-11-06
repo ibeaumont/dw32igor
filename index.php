@@ -43,7 +43,7 @@
 
     ajaxConn.done(function(data) {
       datos=data;
-    }
+    })
  
   
   /*var fotos;
@@ -57,12 +57,7 @@
 
     .done(function( data ) {
       fotos=data;
-      $.each( data.items, function( i, item ) {
-        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
-        if ( i === 3 ) {
-          return false;
-        }
-      });
+$('.carousel-inner img').each(function(idx,el){$(el).attr('src',fotos.items[idx].media.m)})      });
     });
 */
     
