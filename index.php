@@ -33,24 +33,22 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script>
-    var kk;
-    $.ajax({
+    
+    var ajaxConn=$.ajax({
         url : '/data/people.json',
         type : 'GET',
-        dataType : 'json',
-        success : function(data) {
+        dataType : 'json'
+    })
+    
+    ajaxConn.done(function(data) {
           var lista=$('#json ul')
           $(data.people).each(function(ind,el){
 
             $(lista).append('<li>'+el.name+'</li>')
           })
             
-            },
-       error : function(jqXHR, status, error) {
-            alert('Disculpe, existió un problema');
-      },
+      )
       
-      });
     </script>
   </body>
 </html>
