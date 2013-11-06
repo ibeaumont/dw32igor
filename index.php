@@ -39,7 +39,7 @@
         type : 'GET',
         dataType : 'json'
     })
-    
+
     ajaxConn.done(function(data) {
           var lista=$('#json ul')
           $(data.people).each(function(ind,el){
@@ -47,7 +47,7 @@
             $(lista).append('<li>'+el.name+'</li>')
           })
             
-      )
+      })
       
     </script>
   </body>
