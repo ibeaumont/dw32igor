@@ -33,23 +33,38 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script>
-  var fotos;
+ /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
+    var datos;
+   var ajaxConn=$.ajax({
+        url : 'http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml',
+        type : 'GET',
+        dataType : 'xml'
+    })
+
+    ajaxConn.done(function(data) {
+      datos=data;
+    }
+ 
+  
+  /*var fotos;
   var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
   $.getJSON( flickerAPI, {
     tags: "zurriola",
     tagmode: "any",
     format: "json"
   })
+
+
     .done(function( data ) {
       fotos=data;
-      /*$.each( data.items, function( i, item ) {
+      $.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
         if ( i === 3 ) {
           return false;
         }
-      });*/
+      });
     });
-
+*/
     
   /*  var ajaxConn=$.ajax({
         url : '/data/people.json',
