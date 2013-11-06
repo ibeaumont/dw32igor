@@ -49,7 +49,7 @@ console.log("0");
       datos=data;
       console.log(data);
     })
-    ajaxConn.fail(function())
+ 
  
   /*var fotos;
   var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
