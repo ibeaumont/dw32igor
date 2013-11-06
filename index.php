@@ -17,14 +17,17 @@
           <?php include "componentes/noticias.php"; ?>
 				</section><!-- sidebar -->
 			</div><!-- content -->
+    </section><!-- container -->
+    <!--pruebas con ajax - json-->
+    <div id="json">
+      <!--ajax json-->
+      <ul></ul>
+    </div>
+    <!--FIN pruebas con ajax - json-->
     <div class="row" id="footer">
       <?php include "componentes/footer.php"; ?>
     </div>
-		</section><!-- container -->
-    <div id="json">
-      <!--ajax json-->
-      
-    </div>
+
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
@@ -36,12 +39,12 @@
         type : 'GET',
         dataType : 'json',
         success : function(data) {
-          kk=data;
-            /*$('#json').append("<ul>")
-            $()
-            $('<h1/>').text(json.title).appendTo('body');
-            $('<div class="content"/>')
-            .html(json.html).appendTo('body');*/
+          var lista=$('#json ul')
+          $(data.people).each(function(ind,el){
+
+            $(lista).append('<li>'+el.name+'</li>')
+          })
+            
             },
        error : function(jqXHR, status, error) {
             alert('Disculpe, existió un problema');
