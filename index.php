@@ -41,7 +41,8 @@ console.log("0");
    var ajaxConn=$.ajax({
         url : 'http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml',
         type : 'GET',
-        dataType : 'xmlp'
+        contentType: "text/xml; charset=\"utf-8\""
+        dataType : 'jsonp'
     })
 
     ajaxConn.done(function(data) {
