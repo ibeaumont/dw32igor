@@ -21,9 +21,32 @@
       <?php include "componentes/footer.php"; ?>
     </div>
 		</section><!-- container -->
+    <div id="json">
+      <!--ajax json-->
+      
+    </div>
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
+    <script>
+    $.ajax({
+        url : '/data/people.json',
+        type : 'GET',
+        dataType : 'json',
+        success : function(data) {
+          console.log(data);
+            /*$('#json').append("<ul>")
+            $()
+            $('<h1/>').text(json.title).appendTo('body');
+            $('<div class="content"/>')
+            .html(json.html).appendTo('body');*/
+            },
+       error : function(jqXHR, status, error) {
+            alert('Disculpe, existió un problema');
+      },
+      
+      });
+    </script>
   </body>
 </html>
