@@ -30,12 +30,13 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script>
+    var kk;
     $.ajax({
         url : '/data/people.json',
         type : 'GET',
         dataType : 'json',
         success : function(data) {
-          console.log(data);
+          kk=data;
             /*$('#json').append("<ul>")
             $()
             $('<h1/>').text(json.title).appendTo('body');
