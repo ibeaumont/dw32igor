@@ -35,16 +35,18 @@
     <script>
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     var datos;
-   var ajaxConn=$.ajax({
+    var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
+    $.getJSON(url,function(data){datos=data});
+   /*var ajaxConn=$.ajax({
         url : 'http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml',
         type : 'GET',
-        dataType : 'xmlp'
+        dataType : 'jsonp'
     })
 
     ajaxConn.done(function(data) {
       datos=data;
     })
- 
+ */
   
   /*var fotos;
   var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
