@@ -34,8 +34,11 @@
     <script src="js/app.js"></script>
     <script>
 console.log("0");
+$.get('http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml',function(data){
+  console.log(data);
+})
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
-    var datos;
+    /*var datos;
     var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
     jQuery.support.cors = true;
    var ajaxConn=$.ajax({
@@ -50,7 +53,7 @@ console.log("0");
       datos=data;
       console.log(data);
     })
- 
+ */
  
   /*var fotos;
   var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
