@@ -45,6 +45,7 @@
 
     ajaxConn.done(function(data) {
       datos=data;
+      console.log(data);
     })
  
   /*var fotos;
