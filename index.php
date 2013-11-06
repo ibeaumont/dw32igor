@@ -46,8 +46,8 @@
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
         if ( i === 3 ) {
           return false;
-        }*/
-      });
+        }
+      });*/
     });
 
     
