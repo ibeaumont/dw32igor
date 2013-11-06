@@ -39,7 +39,7 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
  
     // Request that YSQL string, and run a callback function.
     // Pass a defined function to prevent cache-busting.
-    $.getJSON(yql, function(data){cosole.log(data)});
+    $.getJSON(yql, function(data){console.log(data)});
 
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     /*var datos;
