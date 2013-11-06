@@ -34,9 +34,13 @@
     <script src="js/app.js"></script>
     <script>
 console.log("0");
-$.get('http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml',function(data){
-  console.log(data);
-})
+var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
+var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url + '"') + '&format=xml&callback=?';
+ 
+    // Request that YSQL string, and run a callback function.
+    // Pass a defined function to prevent cache-busting.
+    $.getJSON(yql, function(data){cosole.log(data)});
+
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     /*var datos;
     var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
