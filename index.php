@@ -33,7 +33,7 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script>
-
+  var fotos;
   var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
   $.getJSON( flickerAPI, {
     tags: "zurriola",
@@ -41,7 +41,7 @@
     format: "json"
   })
     .done(function( data ) {
-      console.log(data);
+      fotos=data;
       /*$.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
         if ( i === 3 ) {
