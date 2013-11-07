@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <html>
   <head>
     <title>Zubiri Manteo MegaInsti-- Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
-   <?php header('Access-Control-Allow-Origin: *'); ?>
+   
   </head>
   <body id="inicio">
 		<section class="container">
@@ -33,13 +34,13 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script>
-console.log("0");
+    var datos;
 var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
 var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url + '"') + '&format=xml&callback=?';
  
     // Request that YSQL string, and run a callback function.
     // Pass a defined function to prevent cache-busting.
-    $.getJSON(yql, function(data){console.log(data)});
+    $.getJSON(yql, function(data){datos=data});
 
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     /*var datos;
