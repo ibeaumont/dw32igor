@@ -6,7 +6,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          Gurasoekin Bilerak eta Tutoritzak
+          Pronostico para Hoy
         </a>
       </h4>
     </div>
@@ -25,7 +25,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          2013-2014 ikasturte Hasiera: ikasleen aurkezpena
+          Pronostico para Mañana
         </a>
       </h4>
     </div>

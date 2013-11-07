@@ -40,7 +40,15 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
  
     // Request that YSQL string, and run a callback function.
     // Pass a defined function to prevent cache-busting.
-    $.getJSON(yql, function(data){datos=data});
+    $.getJSON(yql, function(data){
+      //parsear el xml enviado por euskalmet
+      var xmlDoc = $.parseXML( datos.results[0])
+      //obtner el pronostico para hoy
+      $(xmlDoc).find("descriptionPeriodData").text()
+      //escribir el pronostico de hoy en el tablon de anuncios
+      $('#accordion .panel-body').first().html('<p>'+$(xmlDoc).find("descriptionPeriodData").text()+'</p>')
+
+    });
 
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     /*var datos;
