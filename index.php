@@ -35,8 +35,9 @@
     <script src="js/app.js"></script>
     <script>
     var datos;
-var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
-var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url + '"') + '&format=xml&callback=?';
+var url_hoy='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
+var url_man=='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_tomorrow/adjuntos/forecast.xml';
+var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url_hoy+ '"') + '&format=xml&callback=?';
  
     // Request that YSQL string, and run a callback function.
     // Pass a defined function to prevent cache-busting.
@@ -47,6 +48,20 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
       $(xmlDoc).find("descriptionPeriodData").text()
       //escribir el pronostico de hoy en el tablon de anuncios
       $('#accordion .panel-body').first().html('<p>'+$(xmlDoc).find("descriptionPeriodData").text()+'</p>')
+
+    });
+  //obtener el pronostico de mañana
+  yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url_man+ '"') + '&format=xml&callback=?';
+ 
+    // Request that YSQL string, and run a callback function.
+    // Pass a defined function to prevent cache-busting.
+    $.getJSON(yql, function(data){
+      //parsear el xml enviado por euskalmet
+      var xmlDoc = $.parseXML( data.results[0])
+      //obtner el pronostico para hoy
+      $(xmlDoc).find("descriptionPeriodData").text()
+      //escribir el pronostico de hoy en el tablon de anuncios
+      $('#accordion .panel-body').eq(1).html('<p>'+$(xmlDoc).find("descriptionPeriodData").text()+'</p>')
 
     });
 
