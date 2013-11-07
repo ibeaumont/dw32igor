@@ -49,6 +49,14 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
       //escribir el pronostico de hoy en el tablon de anuncios
       $('#accordion .panel-body').first().html('<p>'+$(xmlDoc).find("descriptionPeriodData").text()+'</p>')
       datos=data;
+      //obtner la imagen del tiempo para donosti
+      $('#accordion .panel-body').first().append(
+        $('<img>').attr('src','http://opendata.euskadi.net'+
+          $(xmlDoc).find("cityForecastData").filter(function(){
+            return $(this).attr('cityCode')=='17'}).find('symbol').text())
+      )
+
+      
       //var imagen="opendata.euskadi.net"+
       //$('#accordion .panel-body').append($('<img >').attr('src',imagen)
 
@@ -66,6 +74,13 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
       //escribir el pronostico de hoy en el tablon de anuncios
       $('#accordion .panel-body').eq(1).html('<p>'+$(xmlDoc).find("descriptionPeriodData").text()+'</p>')
 
+//obtner la imagen del tiempo para donosti
+      $('#accordion .panel-body').eq(1).append(
+        $('<img>').attr('src','http://opendata.euskadi.net'+
+          $(xmlDoc).find("cityForecastData").filter(function(){
+            return $(this).attr('cityCode')=='17'}).find('symbol').text())
+      )
+      
     });
 
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
