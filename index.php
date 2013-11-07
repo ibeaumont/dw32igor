@@ -42,7 +42,7 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
     // Pass a defined function to prevent cache-busting.
     $.getJSON(yql, function(data){
       //parsear el xml enviado por euskalmet
-      var xmlDoc = $.parseXML( datos.results[0])
+      var xmlDoc = $.parseXML( data.results[0])
       //obtner el pronostico para hoy
       $(xmlDoc).find("descriptionPeriodData").text()
       //escribir el pronostico de hoy en el tablon de anuncios
