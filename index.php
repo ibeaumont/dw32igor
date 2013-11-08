@@ -84,7 +84,7 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
     });
 
 //cargar el combo de poblaciones con los datos devueltos por euskalmet
-$(datos).find('cityForecastDataList').children().each(
+$(xmlDoc).find('cityForecastDataList').children().each(
   function(id,el){
     $('#cmbPoblaciones').append(
       '<option value="'+$(el).attr('cityCode')+'">'
@@ -93,7 +93,7 @@ $(datos).find('cityForecastDataList').children().each(
 
 //añadir un handler cuando se cambia una poblacion
 $('#cmbPoblaciones').change(function(){
-var datosPobSel=$(datos).find('cityForecastData')
+var datosPobSel=$(xmlDoc).find('cityForecastData')
     .filter(function(){
       return $(this).attr('cityCode')==$('#cmbPoblaciones').val()
     }).children()
