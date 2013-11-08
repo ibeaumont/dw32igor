@@ -83,6 +83,28 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
       
     });
 
+//cargar el combo de poblaciones con los datos devueltos por euskalmet
+$(datos).find('cityForecastDataList').children().each(
+  function(id,el){
+    $('#cmbPoblaciones').append(
+      '<option value="'+$(el).attr('cityCode')+'">'
+      +$(el ).find('cityName').text()+'</option>')
+  })
+
+//añadir un handler cuando se cambia una poblacion
+$('#cmbPoblaciones').change(function(){
+var datosPobSel=$(datos).find('cityForecastData')
+    .filter(function(){
+      return $(this).attr('cityCode')==$('#cmbPoblaciones').val()
+    }).children()
+
+//escribir fila min
+var min='<tr><td>min</td>"+<td>'+$(datosPobSel).find('tempMin').text()+"</td></tr>"
+//escribir col max
+//dibujar imagen
+$('#tPoblaciones').append(min)
+})
+
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     /*var datos;
     var url='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';

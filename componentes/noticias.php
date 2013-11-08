@@ -52,7 +52,7 @@
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
         Poblacion:<select class="form-control" id="cmbPoblaciones"></select>
-        <table id='tPoblaciones'></table>
+        <table id='tPoblaciones' class="table table-hover"></table>
       </div>
     </div>
   </div>
