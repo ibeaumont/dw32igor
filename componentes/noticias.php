@@ -18,6 +18,7 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
       </div>
     </div>
   </div>
@@ -44,7 +45,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          2013-2014 Ikasturtea: Gida Didaktikoak
+          Pronostico por Poblaciones
         </a>
       </h4>
     </div>

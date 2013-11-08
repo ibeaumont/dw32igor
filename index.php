@@ -48,7 +48,7 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
       $(xmlDoc).find("descriptionPeriodData").text()
       //escribir el pronostico de hoy en el tablon de anuncios
       $('#accordion .panel-body').first().html('<p>'+$(xmlDoc).find("descriptionPeriodData").text()+'</p>')
-      datos=data;
+      datos=xmlDoc;
       //obtner la imagen del tiempo para donosti
       $('#accordion .panel-body').first().append(
         $('<img>').attr('src','http://opendata.euskadi.net'+
