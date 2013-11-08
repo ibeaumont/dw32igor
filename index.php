@@ -100,9 +100,10 @@ var datosPobSel=$(datos).find('cityForecastData')
     }).children()
 
 //escribir fila min
-var min='<tr><td>min</td>"+<td>'+$(datosPobSel).find('tempMin').text()+"</td></tr>"
+var min='<tr><td>min</td>"+<td>'+$(datosPobSel[2]).text()+"</td></tr>"
 //escribir col max
 //dibujar imagen
+$('#tPoblaciones').children().remove();
 $('#tPoblaciones').append(min)
 })
 
