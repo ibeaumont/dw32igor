@@ -80,20 +80,21 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
           $(xmlDoc).find("cityForecastData").filter(function(){
             return $(this).attr('cityCode')=='17'}).find('symbol').text())
       )
-      
-    });
 
 //cargar el combo de poblaciones con los datos devueltos por euskalmet
-$(xmlDoc).find('cityForecastDataList').children().each(
+$(datos).find('cityForecastDataList').children().each(
   function(id,el){
     $('#cmbPoblaciones').append(
       '<option value="'+$(el).attr('cityCode')+'">'
       +$(el ).find('cityName').text()+'</option>')
   })
+      
+    });
+
 
 //añadir un handler cuando se cambia una poblacion
 $('#cmbPoblaciones').change(function(){
-var datosPobSel=$(xmlDoc).find('cityForecastData')
+var datosPobSel=$(datos).find('cityForecastData')
     .filter(function(){
       return $(this).attr('cityCode')==$('#cmbPoblaciones').val()
     }).children()
