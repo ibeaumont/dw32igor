@@ -37,13 +37,14 @@
 
     var datos;
     var URL_RSS_ZUBIRI="http://www.zubirimanteo.hezkuntza.net/web/guest/noticias/-/journal/rss/19560/NOTICIAS?doAsGroupId=19560&refererPlid=224134?languageId=eu_ES"
-  $.ajax({
-    url: URL_RSS_ZUBIRI,
+ $.ajax({
+    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(URL_RSS_ZUBIRI),
+    dataType: 'jsonp',
     success: function (data) {
       datos=data
     },
-    error: function () {},
-    dataType: 'jsonp'
+    error: function () {}
+    
 });  
 /*
 var url_hoy='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
