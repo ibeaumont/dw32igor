@@ -42,6 +42,16 @@
     dataType: 'jsonp',
     success: function (data) {
       datos=data.responseData.feed.entries
+      $('#accordion .panel-default').not(':first').remove()
+      //cargar los titulo y contenido de cada noticia en el acordeon
+      $(datos).each(function(id,el){
+        $('#accordion .panel-default').filter(':first').clone().appendTo('#accordion')
+        $('#accordion h4 a').eq(id).text(el.title);
+        $('#accordion .panel-body').eq(id).html(el.content)
+      })
+
+      //modificar los img para que se cojan de la página de zubiri
+      $('#accordion .panel-body img').each(function(idx,el){$(el).attr('src','http://www.zubirimanteo.com'+$(el).attr('src'))})
     },
     error: function () {}
     
