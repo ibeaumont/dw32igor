@@ -41,7 +41,7 @@
     url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(URL_RSS_ZUBIRI),
     dataType: 'jsonp',
     success: function (data) {
-      datos=data
+      datos=data.responseData.feed.entries
     },
     error: function () {}
     
