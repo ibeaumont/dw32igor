@@ -34,7 +34,17 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script>
+
     var datos;
+  $.ajax({
+    url: 'http://www.zubirimanteo.hezkuntza.net/web/guest/noticias/-/journal/rss/19560/NOTICIAS?doAsGroupId=19560&refererPlid=224134?languageId=eu_ES',
+    success: function (data) {
+      datos=data
+    },
+    error: function () {},
+    dataType: 'jsonp'
+});  
+/*
 var url_hoy='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
 var url_man='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_tomorrow/adjuntos/forecast.xml';
 var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url_hoy+ '"') + '&format=xml&callback=?';
@@ -102,10 +112,13 @@ var datosPobSel=$(datos).find('cityForecastData')
 //escribir fila min
 var min='<tr><td>min</td>"+<td>'+$(datosPobSel[2]).text()+"</td></tr>"
 //escribir col max
+var max='<tr><td>Max</td>"+<td>'+$(datosPobSel[0]).text()+"</td></tr>"
 //dibujar imagen
+var image='<tr><td>Imagen</td>"+<td><img src="'+$(datosPobSel[2]).text()+'"/></td></tr>'
 $('#tPoblaciones').children().remove();
-$('#tPoblaciones').append(min)
+$('#tPoblaciones').append(min+max+image)
 })
+*/
 
  /* EJEMPLO MANEJO AJAX - DATOS XML EUSKALMET*/
     /*var datos;
