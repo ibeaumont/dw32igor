@@ -36,8 +36,9 @@
     <script>
 
     var datos;
+    var URL_RSS_ZUBIRI="http://www.zubirimanteo.hezkuntza.net/web/guest/noticias/-/journal/rss/19560/NOTICIAS?doAsGroupId=19560&refererPlid=224134?languageId=eu_ES"
   $.ajax({
-    url: 'http://www.zubirimanteo.hezkuntza.net/web/guest/noticias/-/journal/rss/19560/NOTICIAS?doAsGroupId=19560&refererPlid=224134?languageId=eu_ES',
+    url: URL_RSS_ZUBIRI,
     success: function (data) {
       datos=data
     },
