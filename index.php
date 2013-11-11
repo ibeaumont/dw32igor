@@ -42,12 +42,22 @@
     dataType: 'jsonp',
     success: function (data) {
       datos=data.responseData.feed.entries
+      //eliminar todas los elementos del accordion menos el primero
       $('#accordion .panel-default').not(':first').remove()
       //cargar los titulo y contenido de cada noticia en el acordeon
       $(datos).each(function(id,el){
-        $('#accordion .panel-default').filter(':first').clone().appendTo('#accordion')
+        if (id>0){
+          //clonar el primer elem de accordion
+          $('#accordion .panel-default').filter(':first').clone().appendTo('#accordion')
+        }
+        //añadir el titulo de la noticia
         $('#accordion h4 a').eq(id).text(el.title);
+        //modificar el href del a
+        $('#accordion h4 a').eq(id).attr('href','collapse'+id);
+        //añadir el contenido de la noticia
         $('#accordion .panel-body').eq(id).html(el.content)
+        //modificar el id del panel
+        $('#accordion .panel-default .panel-collapse').eq(id).attr('id','collapse'+id)
       })
 
       //modificar los img para que se cojan de la página de zubiri
