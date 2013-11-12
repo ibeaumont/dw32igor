@@ -60,7 +60,7 @@
         $('#accordion .panel-default .panel-collapse').eq(id).attr('id','collapse'+id)
       })
       
-      $("#accordion .collapse").collapse()
+      //$("#accordion .collapse").collapse()
 
       //modificar los img para que se cojan de la página de zubiri
       $('#accordion .panel-body img').each(function(idx,el){$(el).attr('src','http://www.zubirimanteo.com'+$(el).attr('src'))})
