@@ -42,14 +42,14 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
 
    var yql_url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%22" + encodeURIComponent(url_rockStar) + "%22%20and%0A%20%20%20%20%20%20xpath%3D'%2F%2Ftitle'&format=json&callback=?";
  
-var ajaxConn=$.ajax({
-        url : yql_url,
-        type : 'GET',
-        contentType: 'text/xml; charset=utf-8',
-        dataType : 'jsonp'
-    }).done(function(data) {
-  datos=data;
-})
+ $.ajax({
+                    url: url_rockStar,
+                    datatype: "html",
+                    success: function (data) {
+                        datos=data;
+                        alert('Load was performed.');
+                    }
+                });
 
 
 //mostrar las noticias del rss de zubiri manteo en el accordion
