@@ -47,7 +47,7 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
     type:'GET',
     dataType:'JSONP',
     success: function(data){
-        $('body').append( "Name: " + data );
+        datos=data;
     }
 });
 
