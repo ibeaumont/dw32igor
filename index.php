@@ -39,20 +39,31 @@
 //mostrar los conciertos de la sala rockstar
 var url_rockStar='http://www.salarockstar.com/articles.html';
 var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url_rockStar+ '"') + '&format=xml&callback=?';
- 
-    // Request that YSQL string, and run a callback function.
-    // Pass a defined function to prevent cache-busting.
-    $.getJSON(yql, function(data){
-      //parsear el xml enviado por euskalmet
+ $.ajax({
+      url: url_rockStar
+      type: "get",
+      dataType: "",
+      success: function(data) { 
       var xmlDoc = $.parseXML( data.results[0])
       //obtner el pronostico para hoy
       datos=$(xmlDoc)
+      }
+    })
+
+    // Request that YSQL string, and run a callback function.
+    // Pass a defined function to prevent cache-busting.
+    //$.getJSON(yql, function(data){
+      //parsear el xml enviado por euskalmet
+    //  var xmlDoc = $.parseXML( data.results[0])
+      //obtner el pronostico para hoy
+    //  datos=$(xmlDoc)
+
       
       
       //var imagen="opendata.euskadi.net"+
       //$('#accordion .panel-body').append($('<img >').attr('src',imagen)
 
-    });
+    //});
 
 
 
