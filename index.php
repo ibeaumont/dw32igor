@@ -46,6 +46,7 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
     url:url_rockStar,
     type:'GET',
     dataType:'JSONP',
+    contentType: 'application/json',
     success: function(data){
       console.log(data)
         datos=data;
