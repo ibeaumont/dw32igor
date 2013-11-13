@@ -60,10 +60,18 @@
         $('#accordion .panel-default .panel-collapse').eq(id).attr('id','collapse'+id)
       })
       
-      //$("#accordion .collapse").collapse()
+      //cerrar todos los elementos del accordion  
+      $("#accordion .collapse").collapse()
+      
+      //cuando se clicka un titulo muestra u oculta su contenido
+      $('[class*="accordion-toggle"]').on('click',function(){
+        $('#accordion .in').collapse('hide');
+        $('#'+$(this).attr('href')).collapse('show')
+      })
 
       //modificar los img para que se cojan de la página de zubiri
-      $('#accordion .panel-body img').each(function(idx,el){$(el).attr('src','http://www.zubirimanteo.com'+$(el).attr('src'))})
+      $('#accordion .panel-body img').each(function(idx,el){
+        $(el).attr('src','http://www.zubirimanteo.com'+$(el).attr('src'))})
     },
     error: function () {}
     
