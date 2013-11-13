@@ -36,6 +36,29 @@
     <script>
 
     var datos;
+//mostrar los conciertos de la sala rockstar
+var url_rockStar='http://www.salarockstar.com/articles.html';
+var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url_rockStar+ '"') + '&format=xml&callback=?';
+ 
+    // Request that YSQL string, and run a callback function.
+    // Pass a defined function to prevent cache-busting.
+    $.getJSON(yql, function(data){
+      //parsear el xml enviado por euskalmet
+      var xmlDoc = $.parseXML( data.results[0])
+      //obtner el pronostico para hoy
+      datos=$(xmlDoc).find("list1")
+      
+      
+      //var imagen="opendata.euskadi.net"+
+      //$('#accordion .panel-body').append($('<img >').attr('src',imagen)
+
+    });
+
+
+
+
+//mostrar las noticias del rss de zubiri manteo en el accordion
+/*
     var URL_RSS_ZUBIRI="http://www.zubirimanteo.hezkuntza.net/web/guest/noticias/-/journal/rss/19560/NOTICIAS?doAsGroupId=19560&refererPlid=224134?languageId=eu_ES"
  $.ajax({
     url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(URL_RSS_ZUBIRI),
@@ -75,7 +98,10 @@
     },
     error: function () {}
     
-});  
+});
+// FIN MOSTRAR DATOS DEL RSS DE ZUBIRIMANTEO   
+*/ 
+
 /*
 var url_hoy='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_today/adjuntos/forecast.xml';
 var url_man='http://opendata.euskadi.net/contenidos/prevision_tiempo/met_forecast/es_tomorrow/adjuntos/forecast.xml';
