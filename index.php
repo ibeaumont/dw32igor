@@ -45,7 +45,7 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
  $.getJSON('http://whateverorigin.org/get?url=' + 
           encodeURIComponent(url_rockStar) + '&callback=?',
           function(data){
-            datos=data;
+            datos=$(data.contents).find('.list1')
 });
 
 
