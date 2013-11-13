@@ -42,15 +42,10 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
 
    var yql_url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%22" + encodeURIComponent(url_rockStar) + "%22%20and%0A%20%20%20%20%20%20xpath%3D'%2F%2Ftitle'&format=json&callback=?";
  
- $.ajax({
-    url:url_rockStar,
-    type:'GET',
-    dataType:'JSONP',
-    contentType: 'application/json',
-    success: function(data){
-      console.log(data)
-        datos=data;
-    }
+ $.getJSON('http://whateverorigin.org/get?url=' + 
+          encodeURIComponent(url_rockStar) + '&callback=?',
+          function(data){
+            datos=data;
 });
 
 
