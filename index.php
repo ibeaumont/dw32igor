@@ -44,7 +44,6 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
  
 $.getJSON(yql_url, function(data) {
   datos=data
-  }
 });
 
 
