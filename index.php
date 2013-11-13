@@ -46,7 +46,7 @@ var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('se
       //parsear el xml enviado por euskalmet
       var xmlDoc = $.parseXML( data.results[0])
       //obtner el pronostico para hoy
-      datos=$(xmlDoc).find("list1")
+      datos=$(xmlDoc)
       
       
       //var imagen="opendata.euskadi.net"+
