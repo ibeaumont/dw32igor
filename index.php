@@ -38,21 +38,14 @@
     var datos;
 //mostrar los conciertos de la sala rockstar
 var url_rockStar='http://www.salarockstar.com/articles.html';
-var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url_rockStar+ '"') + '&format=xml&callback=?';
+//var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url_rockStar+ '"') + '&format=xml&callback=?';
 
-    // Request that YSQL string, and run a callback function.
-    // Pass a defined function to prevent cache-busting.
-    $.getJSON(yql, function(data){
-      //parsear el xml enviado por euskalmet
-      var xmlDoc = $.parseXML( data.results[0])
-      //obtner el pronostico para hoy
-      datos=data
-      
-      
-      
-
-    });
-
+   var yql_url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%22" + encodeURIComponent(url_rockStar) + "%22%20and%0A%20%20%20%20%20%20xpath%3D'%2F%2Ftitle'&format=json&callback=?";
+ 
+$.getJSON(yql_url, function(data) {
+  datos=data
+  }
+});
 
 
 
