@@ -49,7 +49,7 @@ var ajaxConn=$.ajax({
         dataType : 'jsonp'
     }).done(function(data) {
   datos=data;
-
+}
 
 
 //mostrar las noticias del rss de zubiri manteo en el accordion
