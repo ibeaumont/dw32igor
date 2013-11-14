@@ -36,9 +36,10 @@
                 <li><a href="formacion.php#comercio">Comercio</a></li>
                 <li><a href="formacion.php#otros">Otros</a></li>
               </ul>
-            </li>
-		    <li><a href="proyectos.php"><span class="glyphicon glyphicon-plane"></span> Proyectos</a></li>
-            <li><a href="mapa.php"><span class="glyphicon glyphicon-picture"></span> Mapa</a></li>
+          </li>
+	        <li><a href="proyectos.php"><span class="glyphicon glyphicon-plane"></span> Proyectos</a></li>
+          <li><a href="mapa.php"><span class="glyphicon glyphicon-picture"></span> Mapa</a></li>
+          <li><a href="eventos.php"><span class="glyphicon glyphicon-headphones"></span> Eventos</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </nav>

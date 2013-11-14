@@ -46,6 +46,9 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
           encodeURIComponent(url_rockStar) + '&callback=?',
           function(data){
             datos=$(data.contents).find('.list1')
+            var images=$(datos).find('img').each(function(){
+              $(this).attr('src','http://www.salarockstar.com/'+$(this).attr('src'))
+          })
 });
 
 
