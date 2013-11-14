@@ -6,7 +6,7 @@
 		<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
    
   </head>
-  <body id="proyectos">
+  <body id="eventos">
 		<section class="container">
 			<div class="row">
          <?php include "componentes/header.php"; ?>
