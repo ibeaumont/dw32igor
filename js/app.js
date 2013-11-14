@@ -8,6 +8,7 @@ $(function() {
   $("#formacion a:contains('Formacion')").parent().addClass('active');
   $("#proyectos a:contains('Proyectos')").parent().addClass('active');
   $("#mapa a:contains('Mapa')").parent().addClass('active');
+  $("#eventos a:contains('Eventos')").parent().addClass('active');
 
 
   //dropdown menu automaticos cuando hover
