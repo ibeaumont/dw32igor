@@ -35,21 +35,9 @@
     <script src="js/app.js"></script>
     <script>
 
-    var datos;
-//mostrar los conciertos de la sala rockstar
-var url_rockStar='http://www.salarockstar.com/articles.html';
-//var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url_rockStar+ '"') + '&format=xml&callback=?';
+    
 
-   var yql_url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%22" + encodeURIComponent(url_rockStar) + "%22%20and%0A%20%20%20%20%20%20xpath%3D'%2F%2Ftitle'&format=json&callback=?";
- 
- $.getJSON('http://whateverorigin.org/get?url=' + 
-          encodeURIComponent(url_rockStar) + '&callback=?',
-          function(data){
-            datos=$(data.contents).find('.list1')
-            var images=$(datos).find('img').each(function(){
-              $(this).attr('src','http://www.salarockstar.com/'+$(this).attr('src'))
-          })
-});
+
 
 
 //mostrar las noticias del rss de zubiri manteo en el accordion
