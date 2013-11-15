@@ -30,7 +30,7 @@
     <script type="text/javascript">
       function initialize() {
         var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
+          center: new google.maps.LatLng(43.327347,-1.970941),
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
