@@ -38,10 +38,10 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
             for(i=0;i<images.length;i++){
               if (i%3==0){
                 //escribir una nueva linea
-                $('container').append('<div class="row">')
+                $('.container').append('<div class="row">')
               }
               //añadir el thumbnail con los datos
-              $('container row').last()
+              $('.container .row').last()
                  .append(showThumbnail('kk',$(images[i]).attr('src'),'url'));
             }
 
