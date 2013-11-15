@@ -33,7 +33,8 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
           function cargaConciertos(data){
             datos=$(data.contents).find('.list1')
             images=$(datos).find('img').each(function(){
-            $(this).attr('src','http://www.salarockstar.com/'+$(this).attr('src'))
+               $(this).attr('src','http://www.salarockstar.com/'+$(this).attr('src'))
+            })
             for(i=0;i<images.length;i++){
               if (i%0==0){
                 //escribir una nueva linea
@@ -42,10 +43,10 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
               //añadir el thumbnail con los datos
               $('container row').last()
                  .append(showThmbnail('kk',$(images[i]).attr('src'),'url'));
-)            }
+            }
 
           })
-});
+ 
  function showThumbnail(tit,img,url){
   var cod='<div class="col-md-4">'+
               '<div class="thumbnail">'+
