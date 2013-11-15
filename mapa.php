@@ -37,6 +37,7 @@
         var map = new google.maps.Map(document.getElementById("map"),
             mapOptions);
       }
+      $(document).ready(initialize());
     </script>
   </body>
 </html>
