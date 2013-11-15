@@ -55,8 +55,8 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
                   '<div class="caption">'+
                   '<h3>'+tit+'</h3>'+
                   '<p></p>'+
-                  '<p><a href="'+url+'" class="btn btn-primary">Mas info...</a></p>'+
-                  '<p><a href="'+url+'" class="btn btn-warning">Comprar</a></p>'+
+                  '<p><a href="'+urlInfo+'" class="btn btn-primary">Mas info...</a></p>'+
+                  '<p><a href="'+urlCompra+'" class="btn btn-warning">Comprar</a></p>'+
                 '</div>'+
             '</div>';
   return cod;
