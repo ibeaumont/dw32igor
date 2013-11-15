@@ -36,7 +36,7 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
                $(this).attr('src','http://www.salarockstar.com/'+$(this).attr('src'))
             })
             for(i=0;i<images.length;i++){
-              if (i%0==0){
+              if (i%3==0){
                 //escribir una nueva linea
                 $('container').append('<div class="row">')
               }
