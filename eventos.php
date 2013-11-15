@@ -36,13 +36,14 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
             images=$(datos).find('img').each(function(){
                $(this).attr('src','http://www.salarockstar.com/'+$(this).attr('src'))
             })
+            var grupos=$(datos).find('img').siblings('strong')
             for(i=0;i<images.length;i++){
               if (i%3==0){
                 //escribir una nueva linea
                 $('#thumb').append('<div class="row">')
               }
               //añadir el thumbnail con los datos
-              $('#thumb').append(showThumbnail('kk',$(images[i]).attr('src'),'url'));
+              $('#thumb').append(showThumbnail($(grupos[i]).text(),$(images[i]).attr('src'),'url'));
             }
 
           })
