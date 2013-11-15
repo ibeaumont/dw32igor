@@ -1,2 +1,4 @@
-<div id="map">
+<div class="row">
+	<div id="map">
+	</div>
 </div>
