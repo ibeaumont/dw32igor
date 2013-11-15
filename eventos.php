@@ -48,14 +48,14 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
           })
 
  function showThumbnail(tit,img,url){
-  var cod='<div class="col-md-4">'
-              '<div class="thumbnail">'
-              '<img src="+'+img+'" alt="BesTrain">'
-                  '<div class="caption">'
-                  '<h3>'+tit+'</h3>'
-                  '<p></p>'
-                  '<p><a href="'+url+'" class="btn btn-primary">Mas info...</a></p>'
-                '</div>'
+  var cod='<div class="col-md-4">'+
+              '<div class="thumbnail">'+
+              '<img src="'+img+'" alt="BesTrain">'+
+                  '<div class="caption">'+
+                  '<h3>'+tit+'</h3>'+
+                  '<p></p>'+
+                  '<p><a href="'+url+'" class="btn btn-primary">Mas info...</a></p>'+
+                '</div>'+
             '</div>';
   return cod;
  }
