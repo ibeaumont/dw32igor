@@ -42,11 +42,11 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
               }
               //añadir el thumbnail con los datos
               $('container row').last()
-                 .append(showThmbnail('kk',$(images[i]).attr('src'),'url'));
+                 .append(showThumbnail('kk',$(images[i]).attr('src'),'url'));
             }
 
           })
- 
+
  function showThumbnail(tit,img,url){
   var cod='<div class="col-md-4">'+
               '<div class="thumbnail">'+
