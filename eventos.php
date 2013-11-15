@@ -43,12 +43,12 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
                 $('#thumb').append('<div class="row">')
               }
               //añadir el thumbnail con los datos
-              $('#thumb').append(showThumbnail($(grupos[i]).text(),$(images[i]).attr('src'),'url'));
+              $('#thumb').append(showThumbnail($(grupos[i]).text(),$(images[i]).attr('src'),'urlInfo','urlCompra'));
             }
 
           })
 
- function showThumbnail(tit,img,url){
+ function showThumbnail(tit,img,urlInfo,urlCompra){
   var cod='<div class="col-md-4">'+
               '<div class="thumbnail">'+
               '<img src="'+img+'" alt="BesTrain">'+
@@ -56,6 +56,7 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
                   '<h3>'+tit+'</h3>'+
                   '<p></p>'+
                   '<p><a href="'+url+'" class="btn btn-primary">Mas info...</a></p>'+
+                  '<p><a href="'+url+'" class="btn btn-warning">Comprar</a></p>'+
                 '</div>'+
             '</div>';
   return cod;
