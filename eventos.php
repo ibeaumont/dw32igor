@@ -13,7 +13,8 @@
   			 
       </div>
 <!--aqui vamos a introducir los thumbnails -->
-
+      <div id='thumb'>
+      </div>
 
   	
     <?php include "componentes/footer.php"; ?>
@@ -38,11 +39,10 @@ var url_rockStar='http://www.salarockstar.com/articles.html';
             for(i=0;i<images.length;i++){
               if (i%3==0){
                 //escribir una nueva linea
-                $('.container').append('<div class="row">')
+                $('#thumb').append('<div class="row">')
               }
               //añadir el thumbnail con los datos
-              $('.container .row').last()
-                 .append(showThumbnail('kk',$(images[i]).attr('src'),'url'));
+              $('#thumb').append(showThumbnail('kk',$(images[i]).attr('src'),'url'));
             }
 
           })
