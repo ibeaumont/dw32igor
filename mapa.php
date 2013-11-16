@@ -28,13 +28,14 @@
 &sensor=false">
     </script>
     <script type="text/javascript">
+    var mapa;
       function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng(43.327347,-1.970941),
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        var map = new google.maps.Map(document.getElementById("map"),
+        mapa = new google.maps.Map(document.getElementById("map"),
             mapOptions);
       }
       $(document).ready(initialize());
