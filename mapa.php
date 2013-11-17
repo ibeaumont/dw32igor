@@ -30,6 +30,7 @@
     <script type="text/javascript">
     var mapa;
     var image;
+    var marker;
 
       function initialize() {
         var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
@@ -45,7 +46,7 @@
   image.size = new google.maps.Size(35, 35);
   image.anchor = new google.maps.Point(0, 35);
     
-var marker = new google.maps.Marker({
+  marker = new google.maps.Marker({
      position: zubiriPos,
       map: mapa,
       title: 'Intza hemen dago!',
