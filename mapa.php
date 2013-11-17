@@ -40,7 +40,7 @@
         mapa = new google.maps.Map(document.getElementById("map"),
             mapOptions);
 
-var image = new google.maps.MarkerImage('img/logoZubiri.png',
+var image = new google.maps.MarkerImage('img/logoZubiri_min.png',
     // second line defines the dimensions of the image
     new google.maps.Size(140, 140),
     // third line defines the origin of the custom icon
