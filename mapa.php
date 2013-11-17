@@ -42,7 +42,7 @@
 
         var marker = new google.maps.Marker({
      position: zubiriPos,
-      map: map,
+      map: mapa,
       title: 'Intza hemen dago!'
   });
       }
