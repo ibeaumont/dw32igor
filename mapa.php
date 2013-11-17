@@ -39,7 +39,7 @@
         };
         mapa = new google.maps.Map(document.getElementById("map"),
             mapOptions);
-
+var image = 'img/logoZubiri.png';
         var marker = new google.maps.Marker({
      position: zubiriPos,
       map: mapa,
