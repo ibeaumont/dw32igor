@@ -43,7 +43,8 @@ var image = 'img/logoZubiri.png';
         var marker = new google.maps.Marker({
      position: zubiriPos,
       map: mapa,
-      title: 'Intza hemen dago!'
+      title: 'Intza hemen dago!',
+      icon: image
   });
 
 var contentString='<div> Akerrak adarrak okerrak ditu<br/>Adarrak okerrak akerrak ditu</div>';
