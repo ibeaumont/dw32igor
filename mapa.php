@@ -34,7 +34,7 @@
         var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
         var mapOptions = {
           center: zubiriPos,
-          zoom: 8,
+          zoom: 13,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         mapa = new google.maps.Map(document.getElementById("map"),
@@ -44,6 +44,16 @@
      position: zubiriPos,
       map: mapa,
       title: 'Intza hemen dago!'
+  });
+
+var contentString='<div> Akerrak adarrak okerrak ditu<br/>Adarrak okerrak akerrak ditu</div>';
+var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+ 
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(mapa,marker);
   });
       }
       $(document).ready(initialize());
