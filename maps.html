@@ -18,8 +18,9 @@
 </script>
     <script>
 var map;
+var zubiriPos;
 function initialize() {
-  var zubiriPos=new google.maps.LatLng(-34.397, 150.644);
+  zubiriPos=new google.maps.LatLng(-34.397, 150.644);
   var mapOptions = {
     zoom: 13,
     center: zubiriPos,
@@ -29,9 +30,9 @@ function initialize() {
       mapOptions);
   //crear un marcador en el mapa en zubiri
   var marker = new google.maps.Marker({
-      position: zubiriPos,
+     position: zubiriPos,
       map: map,
-      title: 'Aquí toi!'
+      title: 'Intza hemen dago!'
   });
 }
 
