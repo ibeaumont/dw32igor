@@ -42,7 +42,7 @@
         mapa = new google.maps.Map(document.getElementById("map"),
             mapOptions);
 
-  image = new google.maps.MarkerImage('img/logoZubiri_min.png');
+  image = new google.maps.MarkerImage('img/logoZubiri.png');
   image.size = new google.maps.Size(35, 35);
   image.anchor = new google.maps.Point(0, 35);
     
