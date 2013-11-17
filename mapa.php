@@ -42,7 +42,7 @@
 
 var image = new google.maps.MarkerImage('img/logoZubiri.png',
     // second line defines the dimensions of the image
-    new google.maps.Size(40, 40),
+    new google.maps.Size(140, 140),
     // third line defines the origin of the custom icon
     new google.maps.Point(0,0),
     // and the last line defines the offset for the image
