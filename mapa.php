@@ -43,7 +43,7 @@
             mapOptions);
 
   image = new google.maps.MarkerImage('img/logoZubiri.png');
-  image.size = new google.maps.Size(35, 35);
+  image.scaledSize = new google.maps.Size(35, 35);
   image.anchor = new google.maps.Point(0, 35);
     
   marker = new google.maps.Marker({
