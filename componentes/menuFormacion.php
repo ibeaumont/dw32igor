@@ -1,5 +1,5 @@
 <!--menu para la navegacion en formacion -->
-<div id="navFormacion" class="affix">
+<div id="navFormacion">
   <ul class="nav nav-pills nav-stacked">
     <li class="active"><a href="#informatica">Informatica</a></li>
     <li><a href="#turismo" >Turismo</a></li>
