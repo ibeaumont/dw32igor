@@ -29,14 +29,22 @@
     </script>
     <script type="text/javascript">
     var mapa;
+
       function initialize() {
+        var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
         var mapOptions = {
-          center: new google.maps.LatLng(43.327347,-1.970941),
+          center: zubiriPos,
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         mapa = new google.maps.Map(document.getElementById("map"),
             mapOptions);
+
+        var marker = new google.maps.Marker({
+     position: zubiriPos,
+      map: map,
+      title: 'Intza hemen dago!'
+  });
       }
       $(document).ready(initialize());
     </script>
