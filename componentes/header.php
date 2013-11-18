@@ -31,7 +31,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"> Formacion <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="formacion.php#informatica">Informatica</a></li>
-                <li><a href="formacion.php#turismo">Turismo</a></li>
+                <li><a href="formacion.php#ion">Ion</a></li>
                 <li><a href="formacion.php#administrativo">Administrativo</a></li>
                 <li><a href="formacion.php#comercio">Comercio</a></li>
                 <li><a href="formacion.php#otros">Otros</a></li>
@@ -40,6 +40,7 @@
 	        <li><a href="proyectos.php"><span class="glyphicon glyphicon-plane"></span> Proyectos</a></li>
           <li><a href="mapa.php"><span class="glyphicon glyphicon-picture"></span> Mapa</a></li>
           <li><a href="eventos.php"><span class="glyphicon glyphicon-headphones"></span> Eventos</a></li>
+          <li><a href="nuevo.php"><span class="glyphicon glyphicon-headphones"></span> Inscripcion</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </nav>
