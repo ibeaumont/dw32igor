@@ -25,20 +25,29 @@
     <script src="js/app.js"></script>
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCKCfIwvBuXvsA2HdVQTb1Ny-zLQ1jjXjw
-&sensor=false">
+&sensor=true">
     </script>
     <script type="text/javascript">
     var mapa;
     var image;
-    var marker;
+    var marker, markerAquiToy;
 
       function initialize() {
+        //geolocalizacion de zubiri
         var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
+        //geolocalizacion detectada por el navagador
+        if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
+
+
         var mapOptions = {
           center: zubiriPos,
           zoom: 13,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
+
         mapa = new google.maps.Map(document.getElementById("map"),
             mapOptions);
 
@@ -51,6 +60,13 @@
       map: mapa,
       title: 'Intza hemen dago!',
       icon: image
+  });
+  //colocar un nuevo marcador en la localizacion dada por el navegador
+  marker = new google.maps.Marker({
+     position: pos,
+      map: mapa,
+      title: 'A ver a ver""',
+      //icon: 
   });
 
 var contentString='<div> Akerrak adarrak okerrak ditu<br/>Adarrak okerrak akerrak ditu</div>';
