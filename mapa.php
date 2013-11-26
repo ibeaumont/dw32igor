@@ -46,8 +46,9 @@
 
           });
         }
+        console.log(pos);
         var mapOptions = {
-          center: pos,
+          center: zubiriPos,
           zoom: 13,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
