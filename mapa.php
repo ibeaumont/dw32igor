@@ -68,7 +68,7 @@
   markerAquiToy = new google.maps.Marker({
      position: pos,
       map: mapa,
-      title: 'A ver a ver""',
+      title: 'A ver a ver'
       //icon: 
   });
 
