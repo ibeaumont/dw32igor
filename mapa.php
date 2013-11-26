@@ -31,9 +31,10 @@
     var mapa;
     var image;
     var marker, markerAquiToy;
+    var pos;
 
       function initialize() {
-        var pos;
+        
         //geolocalizacion de zubiri
 
         var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
