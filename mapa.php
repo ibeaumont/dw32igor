@@ -47,7 +47,7 @@
           
         console.log(pos);
         var mapOptions = {
-          center: zubiriPos,
+          center: pos,
           zoom: 13,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
