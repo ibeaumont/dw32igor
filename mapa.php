@@ -76,8 +76,6 @@
       icon: image
   });
   
-});
-}
 var contentString='<div> Akerrak adarrak okerrak ditu<br/>Adarrak okerrak akerrak ditu</div>';
 var infowindow = new google.maps.InfoWindow({
       content: contentString
@@ -87,6 +85,9 @@ var infowindow = new google.maps.InfoWindow({
   google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(mapa,marker);
   });
+  });
+}
+
       }
       $(document).ready(initialize());
     </script>
