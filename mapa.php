@@ -35,11 +35,13 @@
       function initialize() {
         var pos;
         //geolocalizacion de zubiri
+
         var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
         //geolocalizacion detectada por el navagador
         if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-        pos = new google.maps.LatLng(position.coords.latitude,                                         position.coords.longitude);
+        pos = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+        console.log(pos);
 
           });
         }
