@@ -57,20 +57,21 @@
   image = new google.maps.MarkerImage('img/logoZubiri.png');
   image.scaledSize = new google.maps.Size(35, 35);
   image.anchor = new google.maps.Point(0, 35);
-    
+  //colocar un nuevo marcador en la localizacion dada por el navegador
+  markerAquiToy = new google.maps.Marker({
+     position: pos,
+      map: mapa,
+      title: 'A ver a ver',
+      icon: image
+  });
+
   marker = new google.maps.Marker({
      position: zubiriPos,
       map: mapa,
       title: 'Intza hemen dago!',
       icon: image
   });
-  //colocar un nuevo marcador en la localizacion dada por el navegador
-  markerAquiToy = new google.maps.Marker({
-     position: pos,
-      map: mapa,
-      title: 'A ver a ver'
-      //icon: 
-  });
+  
 
 var contentString='<div> Akerrak adarrak okerrak ditu<br/>Adarrak okerrak akerrak ditu</div>';
 var infowindow = new google.maps.InfoWindow({
