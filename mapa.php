@@ -62,7 +62,7 @@
       icon: image
   });
   //colocar un nuevo marcador en la localizacion dada por el navegador
-  marker = new google.maps.Marker({
+  markerAquiToy = new google.maps.Marker({
      position: pos,
       map: mapa,
       title: 'A ver a ver""',
