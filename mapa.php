@@ -66,7 +66,7 @@
   });
 
   marker = new google.maps.Marker({
-     position: zubiriPos,
+     position: pos,
       map: mapa,
       title: 'Intza hemen dago!',
       icon: image
