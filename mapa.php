@@ -46,7 +46,7 @@
           });
         }
         var mapOptions = {
-          center: zubiriPos,
+          center: pos,
           zoom: 13,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
@@ -58,11 +58,14 @@
   image.scaledSize = new google.maps.Size(35, 35);
   image.anchor = new google.maps.Point(0, 35);
   //colocar un nuevo marcador en la localizacion dada por el navegador
+  console.log(pos);
   markerAquiToy = new google.maps.Marker({
      position: pos,
       map: mapa,
       title: 'A ver a ver',
       icon: image
+
+
   });
 
   marker = new google.maps.Marker({
