@@ -44,8 +44,7 @@
         pos = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
         console.log(pos);
 
-          });
-        }
+          
         console.log(pos);
         var mapOptions = {
           center: zubiriPos,
@@ -77,7 +76,8 @@
       icon: image
   });
   
-
+});
+}
 var contentString='<div> Akerrak adarrak okerrak ditu<br/>Adarrak okerrak akerrak ditu</div>';
 var infowindow = new google.maps.InfoWindow({
       content: contentString
