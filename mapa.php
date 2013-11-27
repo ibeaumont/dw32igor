@@ -32,10 +32,44 @@
     var image;
     var marker, markerAquiToy;
     var pos;
+    var zubiriPos;
+
+    function showBusqueda(){
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode( { 'address': $('#txtBuscar').val()}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      mapa.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+          map: mapa,
+          position: results[0].geometry.location
+      });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+    }
+    function showRuta(){
+      var directionsService = new google.maps.DirectionsService();
+      var directionsDisplay = new google.maps.DirectionsRenderer();
+      directionsDisplay.setMap(mapa);
+      var request = {
+        origin:pos,
+        destination:,
+        travelMode: google.maps.TravelMode.WALKING
+      };
+        //calcula la ruta
+          directionsService.route(request, function(response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+          directionsDisplay.setDirections(response);
+        }
+      });
+    }
 
       function initialize() {
+        //añadir el evento
+        $('#btnBuscar').on('click',showRuta);
         //geolocalizacion de zubiri
-        var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
+        zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
         //configuracion del mapa   
         var mapOptions = {
           center: zubiriPos,
