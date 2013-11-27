@@ -34,9 +34,11 @@
     var pos;
 
       function initialize() {
+        //geolocalizacion de zubiri
+        var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
         //configuracion del mapa   
         var mapOptions = {
-          center: pos,
+          center: zubiriPos,
           zoom: 13,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
@@ -50,9 +52,8 @@
         image.scaledSize = new google.maps.Size(35, 35);
         image.anchor = new google.maps.Point(0, 35);
         
-        //geolocalizacion de zubiri
-        var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
-       /* 
+        
+        
         //dibujar un marcador en la pos de zubiri con la imagen diseñada
         marker = new google.maps.Marker({
            position: zubiriPos,
@@ -77,7 +78,7 @@
 
           });
         }
-*/
+
 }
       $(document).ready(initialize());
     </script>
