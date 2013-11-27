@@ -34,61 +34,51 @@
     var pos;
 
       function initialize() {
-        
-        //geolocalizacion de zubiri
-
-        var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
-        //geolocalizacion detectada por el navagador
-        if(navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-        pos = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-        console.log(pos);
-
-          
-        console.log(pos);
+        //configuracion del mapa   
         var mapOptions = {
           center: pos,
           zoom: 13,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-
+        
+        //crear el mapa en el documento
         mapa = new google.maps.Map(document.getElementById("map"),
-            mapOptions);
+        mapOptions);
+        
+        //crear una imagen para el marker
+        image = new google.maps.MarkerImage('img/logoZubiri.png');
+        image.scaledSize = new google.maps.Size(35, 35);
+        image.anchor = new google.maps.Point(0, 35);
+        
+        //geolocalizacion de zubiri
+        var zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
+        
+        //dibujar un marcador en la pos de zubiri con la imagen diseñada
+        marker = new google.maps.Marker({
+           position: zubiriPos,
+            map: mapa,
+            title: 'Zubiri Manteo',
+            icon: image
+        });
 
-  image = new google.maps.MarkerImage('img/logoZubiri.png');
-  image.scaledSize = new google.maps.Size(35, 35);
-  image.anchor = new google.maps.Point(0, 35);
-  //colocar un nuevo marcador en la localizacion dada por el navegador
-  console.log(pos);
-  markerAquiToy = new google.maps.Marker({
-     position: pos,
-      map: mapa,
-      title: 'A ver a ver',
-      icon: image
+        //geolocalizacion detectada por el navagador
+        if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function(position) {
+            pos = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
+            //colocar un nuevo marcador en la localizacion dada por el navegador
+            markerAquiToy = new google.maps.Marker({
+               position: pos,
+               map: mapa,
+               title: 'A ver a ver',
+               icon: image
+            });
 
-  });
+          });
+        }
 
-  marker = new google.maps.Marker({
-     position: pos,
-      map: mapa,
-      title: 'Intza hemen dago!',
-      icon: image
-  });
-  
-var contentString='<div> Akerrak adarrak okerrak ditu<br/>Adarrak okerrak akerrak ditu</div>';
-var infowindow = new google.maps.InfoWindow({
-      content: contentString
-  });
-
- 
-  google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(mapa,marker);
-  });
-  });
 }
-
-      }
       $(document).ready(initialize());
     </script>
   </body>
