@@ -1,3 +1,19 @@
+<!--formulario de busqueda -->
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="txtBuscar" class="col-sm-2 control-label">Buscar</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="txtBuscar" placeholder="Escribe...">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button id="btnBuscar" type="button" class="btn btn-default">Buscar</button>
+    </div>
+  </div>
+</form>
+
 <!--titulo-->
 <h3>Tablon</h3>
 <!--accordion-->
