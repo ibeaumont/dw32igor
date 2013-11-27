@@ -54,7 +54,7 @@
       directionsDisplay.setMap(mapa);
       var request = {
         origin:pos,
-        destination:,
+        destination:$('#txtBuscar').val(),
         travelMode: google.maps.TravelMode.WALKING
       };
         //calcula la ruta
