@@ -119,7 +119,7 @@
         var input =document.getElementById('txtBuscar');
         var types = document.getElementById('type-selector');
         autocomplete = new google.maps.places.Autocomplete(input);
-        autocomplete.bindTo('bounds', map);
+        autocomplete.bindTo('bounds', mapa);
         //fin autocompletar
 
 }
