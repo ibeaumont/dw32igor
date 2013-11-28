@@ -53,13 +53,20 @@
   });
     }
     function showRuta(event){
-      kk=event;
+      var destino;
+      if ($(event.target).text()=="Buscar"){
+        //buscar la ruta al lugar de la caja de texto
+        destino=$('#txtBuscar').val();
+      }else{
+        // ha pulsado como llegar a zubiri
+        destino=zubiriPos;
+      }
       var directionsService = new google.maps.DirectionsService();
       
       directionsDisplay.setMap(mapa);
       var request = {
         origin:pos,
-        destination:$('#txtBuscar').val(),
+        destination:destino,
         travelMode: google.maps.TravelMode.WALKING
       };
         //calcula la ruta
@@ -75,6 +82,7 @@
 
         //añadir el evento
         $('#btnBuscar').on('click',showRuta);
+        $('#btnComo').on('click',showRuta);
         //geolocalizacion de zubiri
         zubiriPos=new google.maps.LatLng(43.327347,-1.970941);
         //configuracion del mapa   
