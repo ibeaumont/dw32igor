@@ -14,7 +14,7 @@
           <?php include "componentes/map.php"; ?>
 				</section><!-- main -->
 				<section class="sidebar col col-lg-4">
-          <?php include "componentes/noticias.php"; ?>
+          <?php include "componentes/indicaciones.php"; ?>
 				</section><!-- sidebar -->
 			</div><!-- content -->
     <?php include "componentes/footer.php"; ?>
@@ -34,6 +34,7 @@
     var pos;
     var zubiriPos;
     var autocomplete;
+var directionsService = new google.maps.DirectionsService();
 
     function showBusqueda(){
     var geocoder = new google.maps.Geocoder();
@@ -84,6 +85,8 @@
         mapa = new google.maps.Map(document.getElementById("map"),
         mapOptions);
         
+        //indicar el div donde mostrar las indicaciones
+        directionsDisplay.setPanel(document.getElementById('indicaciones'));
         //crear una imagen para el marker
         image = new google.maps.MarkerImage('img/logoZubiri.png');
         image.scaledSize = new google.maps.Size(35, 35);
@@ -117,7 +120,6 @@
         }
         //autocompletar de google en la caja de texto buscar
         var input =document.getElementById('txtBuscar');
-        var types = document.getElementById('type-selector');
         autocomplete = new google.maps.places.Autocomplete(input);
         autocomplete.bindTo('bounds', mapa);
         //fin autocompletar
