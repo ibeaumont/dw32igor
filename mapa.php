@@ -66,12 +66,7 @@
     }
 
       function initialize() {
-        //autocompletar de google en la caja de texto buscar
-        var input =document.getElementById('txtBuscar');
-        var types = document.getElementById('type-selector');
-        var autocomplete = new google.maps.places.Autocomplete(input);
-        autocomplete.bindTo('bounds', map);
-        //fin autocompletar
+
 
         //añadir el evento
         $('#btnBuscar').on('click',showRuta);
@@ -119,6 +114,12 @@
 
           });
         }
+        //autocompletar de google en la caja de texto buscar
+        var input =document.getElementById('txtBuscar');
+        var types = document.getElementById('type-selector');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
+        //fin autocompletar
 
 }
       $(document).ready(initialize());
