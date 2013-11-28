@@ -126,6 +126,10 @@
                title: 'A ver a ver',
                icon: image
             });
+            if(zubiriPos.distanceFrom(pos)<0.5){
+              //se encuentra a menos de 500 mtrs de zubiri
+              $(body).css('background','red');
+            }
 
           });
         }
@@ -171,7 +175,7 @@ google.maps.LatLng.prototype.distanceFrom = function(newLatLng) {
    var distance = earth_radius * 2 * Math.asin(Math.min(1, Math.sqrt(a)));
  
    // return the distance
-   return distance;
+   return distance*1.609344;
 }
     </script>
   </body>
