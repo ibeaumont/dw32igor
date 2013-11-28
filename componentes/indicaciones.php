@@ -11,6 +11,9 @@
     <div class="col-sm-offset-2 col-sm-10">
       <button id="btnBuscar" type="button" class="btn btn-default">Buscar</button>
     </div>
+    <div class="col-sm-offset-2 col-sm-10">
+      <button id="btnComo" type="button" class="btn btn-default">Como llegar</button>
+    </div>
   </div>
 </form>
 

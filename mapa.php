@@ -36,6 +36,7 @@
     var autocomplete;
     var directionsService = new google.maps.DirectionsService();
     var directionsDisplay = new google.maps.DirectionsRenderer();
+    var kk;
 
     function showBusqueda(){
     var geocoder = new google.maps.Geocoder();
@@ -51,7 +52,8 @@
     }
   });
     }
-    function showRuta(){
+    function showRuta(event){
+      kk=event;
       var directionsService = new google.maps.DirectionsService();
       
       directionsDisplay.setMap(mapa);
