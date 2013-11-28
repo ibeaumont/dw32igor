@@ -67,7 +67,7 @@
 
       function initialize() {
         //autocompletar de google en la caja de texto buscar
-        var input =document.getElementById('txtBuscar'));
+        var input =document.getElementById('txtBuscar');
         var types = document.getElementById('type-selector');
         var autocomplete = new google.maps.places.Autocomplete(input);
         autocomplete.bindTo('bounds', map);
