@@ -8,10 +8,10 @@
   </div>
   
   <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-4">
+    <div class="col-sm-offset-2 col-sm-5">
       <button id="btnBuscar" type="button" class="btn btn-primary">Buscar</button>
     </div>
-    <div class="col-sm-offset-2 col-sm-4">
+    <div class="col-sm-5">
       <button id="btnComo" type="button" class="btn btn-primary">Como llegar</button>
     </div>
   </div>
