@@ -34,7 +34,8 @@
     var pos;
     var zubiriPos;
     var autocomplete;
-var directionsService = new google.maps.DirectionsService();
+    var directionsService = new google.maps.DirectionsService();
+    var directionsDisplay = new google.maps.DirectionsRenderer();
 
     function showBusqueda(){
     var geocoder = new google.maps.Geocoder();
@@ -52,7 +53,7 @@ var directionsService = new google.maps.DirectionsService();
     }
     function showRuta(){
       var directionsService = new google.maps.DirectionsService();
-      var directionsDisplay = new google.maps.DirectionsRenderer();
+      
       directionsDisplay.setMap(mapa);
       var request = {
         origin:pos,
