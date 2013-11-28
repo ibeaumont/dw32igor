@@ -25,7 +25,7 @@
     <script src="js/app.js"></script>
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCKCfIwvBuXvsA2HdVQTb1Ny-zLQ1jjXjw
-&sensor=true">
+&sensor=true&libraries=places"">
     </script>
     <script type="text/javascript">
     var mapa;
