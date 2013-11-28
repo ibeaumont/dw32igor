@@ -33,6 +33,7 @@
     var marker, markerAquiToy;
     var pos;
     var zubiriPos;
+    var autocomplete;
 
     function showBusqueda(){
     var geocoder = new google.maps.Geocoder();
@@ -117,7 +118,7 @@
         //autocompletar de google en la caja de texto buscar
         var input =document.getElementById('txtBuscar');
         var types = document.getElementById('type-selector');
-        var autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete = new google.maps.places.Autocomplete(input);
         autocomplete.bindTo('bounds', map);
         //fin autocompletar
 
